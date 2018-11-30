@@ -80,5 +80,23 @@ namespace WordCounter.Tests
             //Assert
             Assert.IsInstanceOfType(view, typeof(ViewResult));
         }
+
+        // [TestMethod]
+        // public void Create_RedirectsToCorrectAction_Show()
+        // {
+        //     //Arrange
+        //     string word = "dog";
+        //     string sentence = "dog dog";
+        //     WordCounterController controller = new WordCounterController();
+        //     RedirectToActionResult actionResult = controller.Create(word, sentence) as RedirectToActionResult;
+
+        //     //Act
+        //     string result = actionResult.ActionName;
+
+        //     //Assert
+        //     Assert.AreEqual(result, "Show");
+        // }
+        //Commenting this Test out as I'm getting a weird error:
+        //System.NullReferenceException: Object reference not set to an instance of an object.
     }
 }

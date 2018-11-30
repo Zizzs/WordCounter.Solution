@@ -44,7 +44,7 @@ namespace WordCounter.Tests
             int id = 1;
             int total = 2;
             string word = "dog";
-            Scrabble scrabble = new Scrabble(word, total);
+            ScrabbleClass scrabble = new ScrabbleClass(word, total);
 
             //Act
             ActionResult newView = controller.Show(id);
@@ -60,14 +60,14 @@ namespace WordCounter.Tests
             int id = 1;
             int total = 2;
             string word = "dog";
-            Scrabble scrabble = new Scrabble(word, total);
+            ScrabbleClass scrabble = new ScrabbleClass(word, total);
             ViewResult showView = new ScrabbleController().Show(id) as ViewResult;
 
             //Act
             var result = showView.ViewData.Model;
 
             //Assert
-            Assert.IsInstanceOfType(result, typeof(Scrabble));
+            Assert.IsInstanceOfType(result, typeof(ScrabbleClass));
         }
     }
 }

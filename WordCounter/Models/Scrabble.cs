@@ -4,14 +4,14 @@ using System.Linq;
 
 namespace ScrabbleGame.Models
 {
-    public class Scrabble
+    public class ScrabbleClass
     {
         private int _total;
         private string _word;
         private int _id;
-        public static List<Scrabble> _instances = new List<Scrabble> {};
+        public static List<ScrabbleClass> _instances = new List<ScrabbleClass> {};
 
-        public Scrabble(string word, int total)
+        public ScrabbleClass(string word, int total)
         {
             _word = word;
             _total = total;
@@ -44,7 +44,7 @@ namespace ScrabbleGame.Models
             _total = total;
         }
 
-        public static Scrabble Find(int searchId)
+        public static ScrabbleClass Find(int searchId)
         {
             return _instances[searchId - 1];
         }

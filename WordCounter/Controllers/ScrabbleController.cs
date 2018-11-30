@@ -24,7 +24,7 @@ namespace WordCounter.Controllers
         {
             string word = userWord.ToUpper();
             int total = 0;
-            Scrabble userScrabble = new Scrabble(word, total);
+            ScrabbleClass userScrabble = new ScrabbleClass(word, total);
             char[] userArray = word.ToCharArray();
             foreach (char letter in userArray)
             {
@@ -37,7 +37,7 @@ namespace WordCounter.Controllers
         [HttpGet("/scrabble/{id}")]
         public ActionResult Show(int id)
         {
-            Scrabble scrabble = Scrabble.Find(id);
+            ScrabbleClass scrabble = ScrabbleClass.Find(id);
             return View(scrabble);
         }
     }

@@ -1,9 +1,41 @@
 @{
   Layout = "_Layout";
 }
-
+<body class="svg">
+  <svg viewBox="0 0 800 600">
+    <symbol id="s-text">
+      <text text-anchor="middle"
+            x="50%"
+            y="10%"
+            class="text--line"
+            >
+        Highest Quality
+      </text>
+      <text text-anchor="middle"
+            x="50%"
+            y="25%"
+            class="text--line2"
+            >
+        Games
+      </text>
+    </symbol>
+      <g class="g-ants">
+        <use xlink:href="#s-text"
+          class="text-copy"></use>     
+        <use xlink:href="#s-text"
+          class="text-copy"></use>     
+        <use xlink:href="#s-text"
+          class="text-copy"></use>     
+        <use xlink:href="#s-text"
+          class="text-copy"></use>     
+        <use xlink:href="#s-text"
+          class="text-copy"></use>     
+      </g>
+  </svg>
+</body>
+  <br>
 <div class="container">
-  <img src="~/img/cover.png">
+  <br>
   <hr>
   <p class="maintext">Click the links above to visit the games available on the website.</p>
   <p class="maintext">Current Games Available: Word Counter, Scrabble Points Counter.</p>

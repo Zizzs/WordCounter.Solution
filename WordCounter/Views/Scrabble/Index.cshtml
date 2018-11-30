@@ -5,9 +5,11 @@
 }
 
 <div class="container">
-    <h3>Scrabble Point Counter Game!</h3>
-    <p>Click the Link Below to play the Scrabble Point Counter Game! Input a word and it will tell you how many points it would be in a Scrabble Game.</p>
-    <a href = '/scrabble/new'>Play the Scrabble Point Counter Game!</a>
+    <img src="~/img/scrabblecounter.png">
+    <br>
+    <div>
+        <a class="gamelink" href = '/scrabble/new'>Play the Scrabble Point Counter Game!</a>
+    </div>
     <hr>
 
     @if (Scrabble._instances.Count == 0)

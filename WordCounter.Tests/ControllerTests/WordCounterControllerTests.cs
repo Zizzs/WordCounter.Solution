@@ -40,9 +40,14 @@ namespace WordCounter.Tests
         {
              //Arrange
             WordCounterController controller = new WordCounterController();
+            int id = 1;
+            int total = 2;
+            string word = "dog";
+            string sentence = "dog dog";
+            WordCounterClass wordcounter = new WordCounterClass(total, word, sentence);
 
             //Act
-            ActionResult newView = controller.New();
+            ActionResult newView = controller.Show(id);
 
             //Assert
             Assert.IsInstanceOfType(newView, typeof(ViewResult));

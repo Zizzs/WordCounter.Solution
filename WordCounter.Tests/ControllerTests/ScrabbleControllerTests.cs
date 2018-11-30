@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using WordCounter.Controllers;
 using WordCounter.Models;
+using ScrabbleGame.Models;
 
 namespace WordCounter.Tests
 {
@@ -33,6 +34,40 @@ namespace WordCounter.Tests
 
             //Assert
             Assert.IsInstanceOfType(newView, typeof(ViewResult));
+        }
+
+        [TestMethod]
+        public void Show__ReturnsCorrectView_True()
+        {
+             //Arrange
+            ScrabbleController controller = new ScrabbleController();
+            int id = 1;
+            int total = 2;
+            string word = "dog";
+            Scrabble scrabble = new Scrabble(word, total);
+
+            //Act
+            ActionResult newView = controller.Show(id);
+
+            //Assert
+            Assert.IsInstanceOfType(newView, typeof(ViewResult));
+        }
+
+        [TestMethod]
+        public void Show_HasCorrectModelType_ScrabbleObject()
+        {
+            //Arrange
+            int id = 1;
+            int total = 2;
+            string word = "dog";
+            Scrabble scrabble = new Scrabble(word, total);
+            ViewResult showView = new ScrabbleController().Show(id) as ViewResult;
+
+            //Act
+            var result = showView.ViewData.Model;
+
+            //Assert
+            Assert.IsInstanceOfType(result, typeof(Scrabble));
         }
     }
 }

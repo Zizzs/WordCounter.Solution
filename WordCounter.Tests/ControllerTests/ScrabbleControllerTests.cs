@@ -21,5 +21,18 @@ namespace WordCounter.Tests
             //Assert
             Assert.IsInstanceOfType(indexView, typeof(ViewResult));
         }
+
+        [TestMethod]
+        public void New_ReturnsCorrectView_True()
+        {
+            //Arrange
+            ScrabbleController controller = new ScrabbleController();
+
+            //Act
+            ActionResult newView = controller.New();
+
+            //Assert
+            Assert.IsInstanceOfType(newView, typeof(ViewResult));
+        }
     }
 }

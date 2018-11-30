@@ -10,7 +10,7 @@ namespace WordCounter.Tests
     public class WordCounterControllerTest
     {
         [TestMethod]
-        public void Create_RedirectsToCorrectAction_Index()
+        public void Index_ReturnsCorrectView_True()
         {
             //Arrange
             WordCounterController controller = new WordCounterController();
@@ -20,6 +20,19 @@ namespace WordCounter.Tests
 
             //Assert
             Assert.IsInstanceOfType(indexView, typeof(ViewResult));
+        }
+
+        [TestMethod]
+        public void New_ReturnsCorrectView_True()
+        {
+            //Arrange
+            WordCounterController controller = new WordCounterController();
+
+            //Act
+            ActionResult newView = controller.New();
+
+            //Assert
+            Assert.IsInstanceOfType(newView, typeof(ViewResult));
         }
     }
 }

@@ -1,0 +1,26 @@
+@using PalindromeGame.Models;
+
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+    <img src="~/img/palindrome.png">
+    <br>
+    <div>
+        <a class="gamelink" href = '/palindrome/new'>Click here for the Palindrome Checker!</a>
+    </div>
+    <hr>
+
+    @if (PalindromeClass._instances.Count == 0)
+    {
+        <p>You do not have any active Palindrome Checkers</p>
+    }
+    @if (PalindromeClass._instances.Count != 0)
+    {
+        @foreach (PalindromeClass palindrome in PalindromeClass._instances)
+        {
+            <li><a href='/palindrome/@palindrome.GetId()'>Palindrome @palindrome.GetId() - Word: "@palindrome.GetWord()" </a></li>
+        }
+    }
+</div>

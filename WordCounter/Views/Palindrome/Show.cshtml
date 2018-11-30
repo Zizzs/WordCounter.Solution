@@ -1,0 +1,19 @@
+@using PalindromeGame.Models;
+@{
+  Layout = "_Layout";
+}
+
+<div class="container">
+    <h3>Palindrome Checker</h3>
+    <hr>
+    @if (@Model.GetTrue() == true)
+    {
+        <p>Your word @Model.GetWord() is a palindrome!</p>
+    }
+    else
+    {
+        <p>Your word @Model.GetWord() is NOT a palindrome!</p>
+    }
+    
+    <a href='/palindrome'>Home</a>
+</div>

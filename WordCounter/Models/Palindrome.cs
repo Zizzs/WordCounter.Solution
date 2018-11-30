@@ -39,6 +39,16 @@ namespace PalindromeGame.Models
             return _isTrue;
         }
 
+        public int GetId()
+        {
+            return _id;
+        }
+
+        public static PalindromeClass Find(int searchId)
+        {
+            return _instances[searchId - 1];
+        }
+
         public static bool PalindromeChecker(string userInput)
         {
             char[] cArray = userInput.ToCharArray();

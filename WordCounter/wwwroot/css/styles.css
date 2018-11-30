@@ -80,6 +80,11 @@ li
     font-family: 'Roboto Slab', serif;
 }
 
+input[type=text]
+{
+    color: #0E0B16;
+}
+
 
 
 

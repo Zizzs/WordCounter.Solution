@@ -9,9 +9,7 @@
 
 ## Description
 
-_The program starts by asking the user to input a word. The word is set to a string. The program then asks the user to input a sentence which is also set to a string._
-
-_After the user inputs both, the program then checks to see how many times the word is contained within the sentence_
+_The Website consists of three different applications. Each has their own Examples, Specs, and Descriptions stated below._
 
 ## _**Word Counter Example:**_
 

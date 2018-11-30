@@ -22,6 +22,7 @@ namespace WordCounter.Tests
                 string word = "dog";
                 string sentence = "dog dog";
                 WordCounterClass testString = new WordCounterClass(total, word, sentence);
+                WordCounterClass.ClearAll();
                 Assert.AreEqual(1, testString.StringSplitWord("a", "a"));
             }
 

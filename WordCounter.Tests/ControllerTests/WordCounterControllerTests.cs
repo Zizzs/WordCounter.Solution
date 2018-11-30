@@ -65,5 +65,20 @@ namespace WordCounter.Tests
             //Assert
             Assert.IsInstanceOfType(result, typeof(WordCounterClass));
         }
+
+        [TestMethod]
+        public void Create_ReturnsCorrectActionType_RedirectToActionResult()
+        {
+            //Arrange
+            string word = "dog";
+            string sentence = "dog dog";
+            WordCounterController controller = new WordCounterController();
+
+            //Act
+            IActionResult view = controller.Create(word, sentence);
+
+            //Assert
+            Assert.IsInstanceOfType(view, typeof(ViewResult));
+        }
     }
 }

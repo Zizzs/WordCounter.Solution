@@ -1,9 +1,9 @@
 # _Word Counter_
 
 #### _The website consists of three applications: Word Counter, Scrabble Points Counter and Palindrome Checker._
-##### _Word Counter - Takes a user inputted word and sentence and checks to see how many times the word is in the sentence._ #####
-##### _Scrabble Points Calculator - Takes a user inputted word and calculates how much that word would be worth in a Scrabble game._ #####
-##### _Palindrome Checker - Takes a user inputted word and checks to see if it is a palindrome or not._ #####
+##### _Word Counter - Takes a user inputted word and sentence and checks to see how many times the word is in the sentence._ 
+##### _Scrabble Points Calculator - Takes a user inputted word and calculates how much that word would be worth in a Scrabble game._ 
+##### _Palindrome Checker - Takes a user inputted word and checks to see if it is a palindrome or not._ 
 
 #### By _**Alex Williams**_
 
@@ -13,7 +13,7 @@ _The program starts by asking the user to input a word. The word is set to a str
 
 _After the user inputs both, the program then checks to see how many times the word is contained within the sentence_
 
-_**Word Counter Example:**_
+## _**Word Counter Example:**_
 
 _User Word Input: "Dog"_
 
@@ -22,7 +22,7 @@ _User Word Sentence: "The Dog went to the Dog House to play with some Dogs and D
 _Expected Output: "The word Dog is used within the sentence 'The Dog went to the Dog House to play with some Dogs and Doggies.' 2 times._
 
 
-## Specs
+#### Specs
 
 1. [_**Input: "a" and "a"- Expected Output: "1 Match"**_] User inputs the simplest string possible, in this case "a", and the program outputs that it matches once in the given string.
     
@@ -32,26 +32,26 @@ _Expected Output: "The word Dog is used within the sentence 'The Dog went to the
 
 4. [_**Input "cat" and "The cat likes to run with the other cats on the cathedral" - Expected Output: "1 Match"**_] User inputs a string "cat" and a string containing multiple words containing only one instance of the word "cat" but with other words CONTAINING the string "cat". Due to the way the program runs, only matching complete full word matches, the program should not match "cat" with either "cats" or "cathedral" and should only output that there is one match.
 
-_**Scrabble Point Calculator Example:**_
+## _**Scrabble Point Calculator Example:**_
 
 _User Word Input: "dog"_
 
 _Expected Output: "Your word "dog" is worth 4 scrabble points!._
 
 
-## Specs
+#### Specs
 
 1. [_**Input: "a" - Expected Output: "1 Point"**_] User inputs the simplest string possible, in this case "a", and the program outputs that it is worth one point.
     
 2. [_**Input: "aa" - Expected Output: "2 Points"**_] User inputs a simple string  "aa". The program then outputs it is worth 2 points.
 
-_**Palindrome Checker Example:**_
+## _**Palindrome Checker Example:**_
 
 _User Word Input: "racecar"_
 
 _Expected Output: "Your word "racecar" is a palindrome!!._
 
-## Specs
+#### Specs
 
 1. [_**Input: "racecar" - Expected Output: "True"**_] User inputs a string, the program checks if it is a palindrome and returns that it is indeed a palindrome.
     

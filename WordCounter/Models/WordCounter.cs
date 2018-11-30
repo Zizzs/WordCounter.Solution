@@ -11,7 +11,7 @@ namespace WordCounter.Models
         private string _word;
         private string _sentence;
         private int _id;
-        private static List<WordCounterClass> _instances = new List<WordCounterClass> {};
+        public static List<WordCounterClass> _instances = new List<WordCounterClass> {};
 
         public WordCounterClass(int total, string word, string sentence)
         {

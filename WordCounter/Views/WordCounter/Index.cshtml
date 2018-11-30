@@ -1,3 +1,5 @@
+@using WordCounter.Models;
+
 @{
   Layout = "_Layout";
 }
@@ -6,4 +8,16 @@
   <h3>Word Counter</h3>
   <p>Click the Link Below to play the word counter game. You will input a word, and a sentence and the program will check to see how many instances of the word is in the sentence.</p>
   <a href = '/wordcounter/new'>Play the Word Counter</a>
+
+    @if (WordCounterClass._instances.Count == 0)
+    {
+        <p>You do not have any active Word Counters</p>
+    }
+    @if (WordCounterClass._instances.Count != 0)
+    {
+        @foreach (WordCounterClass wordcounters in WordCounterClass._instances)
+        {
+            <li><a href='/wordcounter/@wordcounters.GetId()'>Word Counter @wordcounters.GetId() - Word: "@wordcounters.GetWord()" Sentence: "@wordcounters.GetSentence()"</a></li>
+        }
+    }
 </div>

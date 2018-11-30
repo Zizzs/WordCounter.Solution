@@ -7,13 +7,13 @@ using WordCounter.Models;
 namespace WordCounter.Tests
 {
     [TestClass]
-    public class HomeControllerTest
+    public class WordCounterControllerTest
     {
         [TestMethod]
         public void Create_RedirectsToCorrectAction_Index()
         {
             //Arrange
-            HomeController controller = new HomeController();
+            WordCounterController controller = new WordCounterController();
 
             //Act
             ActionResult indexView = controller.Index();

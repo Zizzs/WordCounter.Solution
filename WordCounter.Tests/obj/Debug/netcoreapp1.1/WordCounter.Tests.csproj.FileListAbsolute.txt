@@ -1,0 +1,15 @@
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.Tests.deps.json
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.Tests.runtimeconfig.json
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.Tests.runtimeconfig.dev.json
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.Tests.dll
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.Tests.pdb
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.dll
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.pdb
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.AssemblyInfo.cs
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.dll
+C:\Users\Alex\Documents\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.pdb

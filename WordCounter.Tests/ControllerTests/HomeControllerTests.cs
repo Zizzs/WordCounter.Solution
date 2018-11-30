@@ -10,7 +10,7 @@ namespace WordCounter.Tests
     public class HomeControllerTest
     {
         [TestMethod]
-        public void Create_RedirectsToCorrectAction_Index()
+        public void Index_ReturnsCorrectView_True()
         {
             //Arrange
             HomeController controller = new HomeController();

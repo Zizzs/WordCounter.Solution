@@ -7,6 +7,61 @@ namespace WordCounter.Models
 {
     public class WordCounterClass
     {
+        private int _total;
+        private string _word;
+        private string _sentence;
+        private int _id;
+        private static List<WordCounterClass> _instances = new List<WordCounterClass> {};
+
+        public WordCounterClass(int total, string word, string sentence)
+        {
+            _total = total;
+            _word = word;
+            _sentence = sentence;
+            _instances.Add(this);
+            _id = _instances.Count;
+        }
+
+        public int GetTotal()
+        {
+            return _total;
+        }
+
+        public string GetWord()
+        {
+            return _word;
+        }
+
+        public string GetSentence()
+        {
+            return _sentence;
+        }
+
+        public int GetId()
+        {
+            return _id;
+        }
+
+        public void SetTotal(int total)
+        {
+            _total = total;
+        }
+
+        public void SetWord(string word)
+        {
+            _word = word;
+        }
+
+        public void SetSentence(string sentence)
+        {
+            _sentence = sentence;
+        }
+
+        public static WordCounterClass Find(int searchId)
+        {
+            return _instances[searchId - 1];
+        }
+
         public int StringSplitWord(string inputWord, string inputString)
         {
             string[] userArr = inputString.Replace(",","").Replace(".","").Split(' ');

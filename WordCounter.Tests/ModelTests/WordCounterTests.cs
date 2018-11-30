@@ -18,30 +18,31 @@ namespace WordCounter.Tests
             [TestMethod]
             public void StringSplitWord_UserwordMatchesWord_Int()
             {
-                WordCounterClass testString = new WordCounterClass();
+                int total = 0;
+                string word = "dog";
+                string sentence = "dog dog";
+                WordCounterClass testString = new WordCounterClass(total, word, sentence);
                 Assert.AreEqual(1, testString.StringSplitWord("a", "a"));
             }
 
             [TestMethod]
             public void StringSplitWord_UserwordMatchesString_int()
             {
-                WordCounterClass testString = new WordCounterClass();
-
-                string userWord = "dog";
-                string userString = "dog dog";
-
-            Assert.AreEqual(2, testString.StringSplitWord(userWord, userString));
+                int total = 0;
+                string word = "dog";
+                string sentence = "dog dog";
+                WordCounterClass testString = new WordCounterClass(total, word, sentence);
+                Assert.AreEqual(2, testString.StringSplitWord(word, sentence));
             }
 
             [TestMethod]
             public void StringSplitWord_UserwordMatchesLongString_int()
             {
-                WordCounterClass testString = new WordCounterClass();
-
-                string userWord = "dog";
-                string userString = "the dog and doggies went into the dog house to find more doggies for the dog party";
-
-            Assert.AreEqual(3, testString.StringSplitWord(userWord, userString));
+                int total = 0;
+                string word = "dog";
+                string sentence = "dog dog dog";
+                WordCounterClass testString = new WordCounterClass(total, word, sentence);
+                Assert.AreEqual(3, testString.StringSplitWord(word, sentence));
             }
         }
     }
